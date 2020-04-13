@@ -9,5 +9,5 @@
 		- **nro** : Porcentage mínimo de plagio para que considere dos archivos
 		- Ejecutar en la carpeta que contiene todos los archivos a comparar.
 		- Los archivo pueden estar contenidos en la carpeta o subcarpetas.
-		- Ejemplo `./percentdup.sh java 15`
-			- Mostraría aquellos ficheros de extensión `.java` con más  del `15%` de similaridad.
+		- Ejemplo **./percentdup.sh java 15**
+			- Mostraría aquellos ficheros de extensión `.java` con más  del `15%` de `similaridad acumulada` dentro de la carpeta actual y sus subcarpetas.
