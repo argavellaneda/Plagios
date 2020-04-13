@@ -1,10 +1,8 @@
 # Script para calculo del Indice de Similitud Incremental de trabajos.
+# Carpeta /
 
-- Uso :
-	- ./percentdup.sh tipo numero
-		- **tipo** : extensión de los archivos a comparar.
-		- **numero** : mínimo valor para que aparezca en la comparativa.
-		- Ejecutar en la carpeta que contiene todos los archivos a comparar.
-		- Los archivo pueden estar contenidos en la carpeta o subcarpetas.
-		- Ejemplo `./percentdup.sh java 15`
-			- Mostraría aquellos ficheros de extensión `.java` con más  del `15%` de similaridad.
+- Proyecto para la creación de scripts y programas para la gestión de Plagios en Archivos
+----------------------
+- Carpetas :
+	- **scripts** : Carpeta con el código de Scripts y Programas.
+	- **recursos** : Carpeta con diversos recursos relacionados al proyecto.
