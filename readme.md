@@ -1,4 +1,4 @@
-#Script para calculo del Indice de Similitud Incremental de trabajos.
+# Script para calculo del Indice de Similitud Incremental de trabajos.
 
 - Uso :
 	- ./percentdup.sh tipo numero
