@@ -3,6 +3,7 @@
 # walk through all files in the current dir (and subdirs)
 # and compare them with other files, showing percentage
 # of duplication.
+# https://stackoverflow.com/questions/2722947/percentage-value-with-gnu-diff
 
 # which type files to compare?
 # (wouldn't make sense to compare binary formats)
@@ -30,7 +31,7 @@ while read string; do
     # remove empty lines since they produce false positives
     sed '/^$/d' $fileA > tempA
 
-    echo Comparing $fileA with other files...
+    echo Comparando $fileA con los ficheros :
 
     while read string; do
         fileB=$(echo $string | sed 's/.[^.]*\./\./')
@@ -43,7 +44,7 @@ while read string; do
 
         percentage=$(echo "100 * $common / $B_len" | bc)
         if [[ $percentage -gt $min ]]; then
-            echo "  $percentage% duplication in" \
+            echo "  $percentage% replica en" \
                  "$(echo $fileB | sed 's|\./||')"
         fi
     done < "$remaining_files"
